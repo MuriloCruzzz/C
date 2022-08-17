@@ -6,6 +6,6 @@ int main(){
   int n;
   printf("Digite um nimero: ");
   scanf("%i", &n);
-  printf("O numero que voce digitou é %s", (n%2)?"impar":"par");
+  printf("O numero que voce digitou é %s", (n%2==0)?"impar":"par");
   return 0;
 }
