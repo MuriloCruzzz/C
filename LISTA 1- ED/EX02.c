@@ -1,29 +1,21 @@
 #include <stdio.h>
 #include <locale.h>
 
-int main(void) {
+int main(){
   setlocale(LC_ALL, "Portuguese");
-  printf(" <<< MÉDIA ARITMÉTICA >>>\n\n");
-  float n1, n2, n3, n4, n5, mf;
+  printf(" <<< MÉDIA PONDERADA >>>\n\n");
+  float n1, n2, n3, n4, n5, mp;
+  int p1, p2, p3, p4, p5, sp;
 
-  printf("Digite o primeiro valor: ");
-  scanf("%f", &n1);
-  
-  printf("Digite o segundo valor: ");
-  scanf("%f", &n2);
-  
-  printf("Digite o terceiro valor: ");
-  scanf("%f", &n3);
-  
-  printf("Digite o quarto valor: ");
-  scanf("%f", &n4);
-  
-  printf("Digite o quinto valor: ");
-  scanf("%f", &n5);
+  printf("Digite 5 notas separadas por espaço: ");
+  scanf("%f%f%f%f%f", &n1, &n2, &n3, &n4, &n5);
+  printf("Digite 5 pesos correspondentes: ");
+  scanf("%i%i%i%i%i", &p1, &p2, &p3, &p4, &p5);
 
-  mf = (n1 + n2 + n3 + n4 + n5) / 5;
-  printf("\nSua media final será de %.2f: ", mf);
-  scanf("%f", &mf);
+  sp = p1 + p2 + p3 + p4 + p5;
+  mp = (n1 * p1 + n2 * p2 + n3 * p3 + n4 * p4 + n5 * p5);
   
+  printf("\nSua media aritimética final será de %.2f: ", mp);
+    
   return 0;
 }
