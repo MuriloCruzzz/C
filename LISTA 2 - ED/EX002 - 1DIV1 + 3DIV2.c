@@ -5,8 +5,7 @@ int main(void) {
   for(i = 1, j = 1; /*i <= 99,*/ j <= 50; i = i +2, j = j+1){
     r = i / j;
     printf("%.3f\n", r);
-    soma = soma + r;
-    
+    soma = soma + r;    
   }
   printf("\nTOTAL= %.3f", soma);
   
