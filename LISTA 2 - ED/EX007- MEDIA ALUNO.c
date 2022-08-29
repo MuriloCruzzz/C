@@ -10,7 +10,7 @@ void main(){
        scanf("%f",&nota);
        mf = mf + nota;
 
-    //printf("A média do aluno é de: %f", mf/5);
+    //printf("A mÃ©dia do aluno Ã© de: %f", mf/5);
     }
     if((mf / 5 )< 6 )
         printf("\nO aluno ficou com media %f\nPortanto ele(a) esta REPROVADO(A)\n\n", mf/5);
