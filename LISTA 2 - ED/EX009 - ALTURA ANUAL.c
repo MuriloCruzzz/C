@@ -9,5 +9,5 @@ void main(){
   r = r + 0.03;
   ano++;
   }
-  printf("Vai demorar %d anos para que Josevaldo ser maior que Rafonildo", ano);
+  printf("Vai demorar %i anos para que Josevaldo ser maior que Rafonildo", ano);
   }
