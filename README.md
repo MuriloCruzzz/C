@@ -1,2 +1,2 @@
 # Linguagem C
-Estudo e projestos
+Estudos e projetos
